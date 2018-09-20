@@ -4,7 +4,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.audience.api.api.model.User;
 import com.audience.api.api.service.UserService;
 
-@Service(version = "1.0.0")
+@Service
 public class UserServiceImpl implements UserService {
 
     @Override
