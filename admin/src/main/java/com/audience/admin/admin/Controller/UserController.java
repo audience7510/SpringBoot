@@ -1,7 +1,9 @@
 package com.audience.admin.admin.Controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.audience.admin.admin.model.User;
 import com.audience.api.api.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,17 +18,27 @@ public class UserController {
     @Reference
     UserService userService;
 
+    @Autowired
+    com.audience.admin.admin.service.UserService adminUserService;
+
     @Resource
     RedisTemplate redisTemplate;
 
-    @RequestMapping("/getUser")
+    @RequestMapping("/setUser")
     @ResponseBody
-    public String getUser(String userName){
+    public String setUser(String userName){
 //        User user = userService.getUser(userName);
 //        User user = new User();
 //        user.setName("heihei");
 //        user.setAge(18);
         redisTemplate.opsForValue().set(userName,1111323232);
         return "ok";
+    }
+
+    @RequestMapping("/getUser")
+    @ResponseBody
+    public User getUser(String userName){
+        User user = adminUserService.getUser(userName);
+        return user;
     }
 }
