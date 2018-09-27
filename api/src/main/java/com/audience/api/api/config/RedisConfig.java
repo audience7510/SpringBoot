@@ -40,12 +40,12 @@ public class RedisConfig {
     @Value("${redis.testWhileIdle}")
     private boolean testWhileIdle;
 
-
-    @Value("${spring.redis.cluster.nodes}")
-    private String clusterNodes;
-
-    @Value("${spring.redis.cluster.max-redirects}")
-    private Integer mmaxRedirectsac;
+//
+//    @Value("${spring.redis.cluster.nodes}")
+//    private String clusterNodes;
+//
+//    @Value("${spring.redis.cluster.max-redirects}")
+//    private Integer mmaxRedirectsac;
 
     /**
      * JedisPoolConfig 连接池

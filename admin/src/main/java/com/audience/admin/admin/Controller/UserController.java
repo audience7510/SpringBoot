@@ -14,10 +14,12 @@ public class UserController {
     @Reference
     UserService userService;
 
+
+
     @RequestMapping("/getUser")
     @ResponseBody
-    public User getUser(){
-        User user = userService.getUser();
+    public User getUser(String userName){
+        User user = userService.getUser(userName);
 //        User user = new User();
 //        user.setName("heihei");
 //        user.setAge(18);

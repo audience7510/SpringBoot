@@ -1,11 +1,9 @@
 package com.audience.api.api.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.audience.api.api.mapper.UserMapper;
 import com.audience.api.api.model.User;
 import com.audience.api.api.service.UserService;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 
 import java.util.HashMap;
@@ -19,8 +17,6 @@ public class UserServiceImpl implements UserService {
 
     private Logger logger = Logger.getLogger(UserServiceImpl.class);
 
-    @Autowired
-    private UserMapper userMapper;
 
     /**
      * 模拟数据库查询
