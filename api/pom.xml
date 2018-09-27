@@ -41,18 +41,23 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- dubbo依赖 -->
 		<dependency>
 			<groupId>io.dubbo.springboot</groupId>
 			<artifactId>spring-boot-starter-dubbo</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<!-- Spring Boot Data Cache 依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
 
-		<!-- Dubbo 依赖 -->
-		<!--<dependency>-->
-			<!--<groupId>com.alibaba</groupId>-->
-			<!--<artifactId>dubbo</artifactId>-->
-			<!--<version>2.6.1</version>-->
-		<!--</dependency>-->
+		<!-- Spring Boot Data Redis 依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
