@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Cacheable(value = "ccc",keyGenerator="SimpleKey")
+    @Cacheable(value = "ccc",keyGenerator="SimpleKey",cacheManager = "cacheManager315")
     public User getUser2(String userName) {
         User user = new User();
         user.setName("ccc");
