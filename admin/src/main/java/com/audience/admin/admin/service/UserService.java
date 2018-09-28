@@ -4,4 +4,6 @@ import com.audience.admin.admin.model.User;
 
 public interface UserService {
     User getUser(String userName);
+
+    User getUser2(String userName);
 }

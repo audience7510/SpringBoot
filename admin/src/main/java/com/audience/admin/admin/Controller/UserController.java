@@ -31,7 +31,10 @@ public class UserController {
 //        User user = new User();
 //        user.setName("heihei");
 //        user.setAge(18);
-        redisTemplate.opsForValue().set(userName,1111323232);
+        User user = new User();
+        user.setName("大熊");
+        user.setAge(18);
+        redisTemplate.opsForValue().set(userName,user);
         return "ok";
     }
 
@@ -39,6 +42,13 @@ public class UserController {
     @ResponseBody
     public User getUser(String userName){
         User user = adminUserService.getUser(userName);
+        return user;
+    }
+
+    @RequestMapping("/getUser2")
+    @ResponseBody
+    public User getUser2(String userName){
+        User user = adminUserService.getUser2(userName);
         return user;
     }
 }
