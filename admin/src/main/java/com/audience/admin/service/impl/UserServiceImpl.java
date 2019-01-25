@@ -1,7 +1,7 @@
-package com.audience.admin.admin.service.impl;
+package com.audience.admin.service.impl;
 
-import com.audience.admin.admin.model.User;
-import com.audience.admin.admin.service.UserService;
+import com.audience.admin.model.User;
+import com.audience.admin.service.UserService;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 

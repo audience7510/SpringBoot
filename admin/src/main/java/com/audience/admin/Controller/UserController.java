@@ -1,8 +1,8 @@
-package com.audience.admin.admin.Controller;
+package com.audience.admin.Controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.audience.admin.admin.model.User;
-import com.audience.api.api.service.UserService;
+import com.audience.admin.model.User;
+import com.audience.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,7 @@ public class UserController {
     UserService userService;
 
     @Autowired
-    com.audience.admin.admin.service.UserService adminUserService;
+    com.audience.admin.service.UserService adminUserService;
 
     @Resource
     RedisTemplate redisTemplate;

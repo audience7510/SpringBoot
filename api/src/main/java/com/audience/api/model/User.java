@@ -1,4 +1,4 @@
-package com.audience.admin.admin.model;
+package com.audience.api.model;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
-package com.audience.api.api.service;
+package com.audience.api.service;
 
-import com.audience.api.api.model.User;
+import com.audience.api.model.User;
 
 public interface UserService {
     User getUser(String userName);

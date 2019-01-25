@@ -1,4 +1,4 @@
-package com.audience.admin.admin.config;
+package com.audience.api.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -16,8 +16,6 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
 
 
 @Configuration
@@ -55,16 +53,9 @@ public class RedisConfig extends CachingConfigurerSupport {
      * @param redisTemplate
      * @return
      */
-    @Bean(name = "cacheManager315")
+    @Bean
     public CacheManager cacheManager(@SuppressWarnings("rawtypes") RedisTemplate redisTemplate) {
-
         RedisCacheManager rm = new RedisCacheManager(redisTemplate);
-
-        //设置缓存失效时间(暂时不设置)
-//        Map<String, Long> expires = new HashMap<String, Long>();
-//        expires.put("news", 60L);
-//        rm.setExpires(expires);
-
         return rm;
     }
 

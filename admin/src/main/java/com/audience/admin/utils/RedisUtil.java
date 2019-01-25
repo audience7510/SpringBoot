@@ -1,12 +1,12 @@
-package com.audience.api.api.utils;
+package com.audience.admin.utils;
+
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.util.CollectionUtils;
 
 public class RedisUtil {
 

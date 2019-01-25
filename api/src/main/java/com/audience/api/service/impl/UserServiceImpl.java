@@ -1,8 +1,8 @@
-package com.audience.api.api.service.impl;
+package com.audience.api.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.audience.api.api.model.User;
-import com.audience.api.api.service.UserService;
+import com.audience.api.model.User;
+import com.audience.api.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.cache.annotation.CacheConfig;
 
