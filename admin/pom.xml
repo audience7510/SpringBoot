@@ -42,6 +42,7 @@
 			<artifactId>spring-boot-starter-dubbo</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+
 		<!-- Spring Boot Data Cache 依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -53,16 +54,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
+
+		<!-- Spring Boot log4j 依赖 -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+
+		<!-- api服务的依赖 -->
         <dependency>
             <groupId>com.audience.api</groupId>
             <artifactId>api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+		<!-- Spring Boot RabbitMQ 依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
     </dependencies>
 
 	<build>
